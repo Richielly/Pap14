@@ -1,0 +1,39 @@
+package br.com.rich.uteis;
+
+import java.io.Serializable;
+
+import javax.faces.component.UIComponent;
+import javax.faces.context.FacesContext;
+import javax.faces.convert.Converter;
+import javax.faces.convert.FacesConverter;
+
+import br.com.rich.model.EstadoModel;
+
+@FacesConverter(value = "selectOneMenuConverter", forClass = EstadoModel.class)
+public class SelectOneMenuConverter implements Converter, Serializable {
+
+	//EstadoRepository estadoRepository = new EstadoRepository();
+	private static final long serialVersionUID = 1L;
+
+	@Override
+	public Object getAsObject(FacesContext arg0, UIComponent arg1, String codigo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getAsString(FacesContext arg0, UIComponent arg1, Object objeto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+	
+}
+
+
+
+
+
+  
+

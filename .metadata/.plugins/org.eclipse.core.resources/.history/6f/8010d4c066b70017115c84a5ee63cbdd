@@ -1,0 +1,28 @@
+package br.com.rich.estado.controller;
+
+import java.io.Serializable;
+
+import javax.enterprise.context.SessionScoped;
+import javax.inject.Inject;
+import javax.inject.Named;
+
+import br.com.rich.model.EstadoModel;
+import br.com.rich.repository.EstadoRepository;
+import br.com.rich.repository.entity.EstadoEntity;
+
+@Named(value="estadoController")
+@SessionScoped
+public class EstadoController implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+	
+	@Inject
+	private EstadoModel usuarioModel;
+ 
+	@Inject
+	private EstadoRepository usuarioRepository;
+ 
+	@Inject
+	private EstadoEntity usuarioEntity;
+	
+}

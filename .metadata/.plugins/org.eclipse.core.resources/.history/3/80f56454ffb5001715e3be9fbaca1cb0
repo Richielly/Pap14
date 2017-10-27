@@ -1,0 +1,59 @@
+package br.com.rich.repository.entity;
+
+import java.time.LocalDateTime;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+	//`A02_CODIGO`, `A03_CODIGO_DE_BARRAS`, `A04_DATA_CRIACAO`, `A05_DATA_MODIFICACAO`, 
+	//`T11_PRODUTO_A01_PRODUTO`, `T17_MARCA_A01_MARCA`, `T13_PRE_ACABADO_A01_PRE_ACABADO`, `T13_PRE_ACABADO_T14_FORMULA_A01_FORMULA`, `T13_PRE_ACABADO_T14_FORMULA_A01_FORMULA1`
+
+@Entity
+@Table(name="t12_produto_acabado")
+public class ProdutoAcabado {
+	
+	@Column(name = "A01_PRODUTO_ACABADO")
+	private int	id;
+	@Column(name = "A02_CODIGO")
+	private int	codigo;
+	@Column(name = "A03_CODIGO_DE_BARRAS")
+	private long	codigoDeBarras;
+	@Column(name = "A04_DATA_CRIACAO")
+	private LocalDateTime	dataCriacao;
+	@Column(name = "A05_DATA_MODIFICACAO")
+	private LocalDateTime	dataModificacao;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public int getCodigo() {
+		return codigo;
+	}
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
+	}
+	public long getCodigoDeBarras() {
+		return codigoDeBarras;
+	}
+	public void setCodigoDeBarras(long codigoDeBarras) {
+		this.codigoDeBarras = codigoDeBarras;
+	}
+	public LocalDateTime getDataCriacao() {
+		return dataCriacao;
+	}
+	public void setDataCriacao(LocalDateTime dataCriacao) {
+		this.dataCriacao = dataCriacao;
+	}
+	public LocalDateTime getDataModificacao() {
+		return dataModificacao;
+	}
+	public void setDataModificacao(LocalDateTime dataModificacao) {
+		this.dataModificacao = dataModificacao;
+	}
+
+	
+	
+}

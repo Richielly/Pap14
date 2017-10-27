@@ -1,0 +1,99 @@
+package br.com.rich.repository.entity;
+
+import java.time.LocalDateTime;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+	//`A02_NOME`, `A03_LOTE`, `A04_DATA_DE_FABRICACAO`, `A05_DATA_DE_VENCIMENTO`, `A06_QUANTIDADE_POR_EMBALAGEM`, `A07_PRECO`, `A08_STATUS`, 
+	//`T24_UNIDADE_DE_MEDIDA_A01_TIPO_DE_MEDIDA`
+
+@Entity
+@Table(name="t11_produto")
+public class Produto {
+
+	@Column(name = "A01_PRODUTO")
+	private int	id;
+	@Column(name = "A02_NOME")
+	private String	nome;
+	@Column(name = "A03_LOTE")
+	private String	lote;
+	@Column(name = "A04_DATA_DE_FABRICACAO")
+	private LocalDateTime	dataFabricacao;
+	@Column(name = "A05_DATA_DE_VENCIMENTO")
+	private LocalDateTime	dataVencimento;
+	@Column(name = "A06_QUANTIDADE_POR_EMBALAGEM")
+	private int	quantidadePorEmbalagem;
+	@Column(name = "A07_PRECO")
+	private Double	preco;
+	@Column(name = "A08_STATUS")
+	private String	status;
+	@Column(name = "A09_DATA_CRIACAO")
+	private LocalDateTime	dataCriacao;
+	@Column(name = "A10_DATA_MODIFICACAO")
+	private LocalDateTime	dataModificacao;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getLote() {
+		return lote;
+	}
+	public void setLote(String lote) {
+		this.lote = lote;
+	}
+	public LocalDateTime getDataFabricacao() {
+		return dataFabricacao;
+	}
+	public void setDataFabricacao(LocalDateTime dataFabricacao) {
+		this.dataFabricacao = dataFabricacao;
+	}
+	public LocalDateTime getDataVencimento() {
+		return dataVencimento;
+	}
+	public void setDataVencimento(LocalDateTime dataVencimento) {
+		this.dataVencimento = dataVencimento;
+	}
+	public int getQuantidadePorEmbalagem() {
+		return quantidadePorEmbalagem;
+	}
+	public void setQuantidadePorEmbalagem(int quantidadePorEmbalagem) {
+		this.quantidadePorEmbalagem = quantidadePorEmbalagem;
+	}
+	public Double getPreco() {
+		return preco;
+	}
+	public void setPreco(Double preco) {
+		this.preco = preco;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	public LocalDateTime getDataCriacao() {
+		return dataCriacao;
+	}
+	public void setDataCriacao(LocalDateTime dataCriacao) {
+		this.dataCriacao = dataCriacao;
+	}
+	public LocalDateTime getDataModificacao() {
+		return dataModificacao;
+	}
+	public void setDataModificacao(LocalDateTime dataModificacao) {
+		this.dataModificacao = dataModificacao;
+	}
+	
+	
+	
+}

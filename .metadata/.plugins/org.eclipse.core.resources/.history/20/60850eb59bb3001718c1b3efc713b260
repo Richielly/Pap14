@@ -1,0 +1,38 @@
+package br.com.rich.repository.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import br.com.rich.model.CidadeModel;
+import br.com.rich.model.PessoaModel;
+
+//A02_LOGRADOURO`, `A03_NUMERO`, `A04_BAIRRO`, `A05_CEP`, `A06_COMPLEMENTO`
+//`T07_CIDADE_A01_CIDADE`, `T01_PESSOA_A01_PESSOA`
+
+@Entity
+@Table(name="t06_endereco")
+public class EnderecoEntity {
+	@Id
+	@GeneratedValue
+	@Column(name="A01_ENDERECO")
+	private int id;
+	@Column(name="A02_LOGRADOURO")
+	private String logradouro;
+	@Column(name="A03_NUMERO")
+	private String numero;
+	@Column(name="A04_BAIRRO")
+	private String Bairro;
+	@Column(name="A05_CEP")
+	private long cep;
+	@Column(name="A06_COMPLEMENTO")
+	private String complemento;
+	@Column(name="")
+	private CidadeModel cidade;
+	@Column(name="")
+	private PessoaModel pessoa;
+	
+	
+}

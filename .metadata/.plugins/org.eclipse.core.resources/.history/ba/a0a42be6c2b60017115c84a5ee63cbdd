@@ -1,0 +1,51 @@
+package br.com.rich.repository;
+
+import java.time.LocalDateTime;
+
+import javax.inject.Inject;
+import javax.persistence.EntityManager;
+
+import br.com.rich.model.EstadoModel;
+import br.com.rich.repository.entity.CidadeEntity;
+import br.com.rich.repository.entity.EstadoEntity;
+import br.com.rich.repository.entity.PessoaEntity;
+import br.com.rich.uteis.Uteis;
+
+public class EstadoRepository {
+
+	@Inject
+	EstadoEntity estadoEntity;
+	
+	EntityManager entityManager;
+	
+	
+	/***
+	 * MÉTODO RESPONSÁVEL POR SALVAR UMA NOVO ESTADO
+	 * @param estadoModel
+	 */
+	
+	public void salvarNovoEstado (EstadoModel estadoModel){
+		entityManager =  Uteis.JpaEntityManager();
+		
+		estadoEntity = new EstadoEntity();
+		estadoEntity.setDataCriacao(LocalDateTime.now());
+		estadoEntity.setDataModificacao(LocalDateTime.now());
+		estadoEntity.setNome(estadoModel.getNome());
+		estadoEntity.setSigla(estadoModel.getSigla());
+		
+		entityManager.persist(estadoEntity);
+	}
+	
+	/***
+	 * CONSULTA UM ESTADO CADASTRADO PELO CÓDIGO
+	 * @param id
+	 * @return
+	 */
+	private EstadoEntity GetEstado(int id){
+ 
+		entityManager =  Uteis.JpaEntityManager();
+ 
+		return entityManager.find(EstadoEntity.class, id);
+	}
+	
+}

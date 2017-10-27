@@ -1,0 +1,13 @@
+package br.com.rich.repository.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+	//`A02_QUANTIDADE`, `A03_ESTOQUE_MINIMO`, `A04_DATA_DE_CRIACAO`, `A05_DATA_DE_MODIFICACAO`, 
+	//`T24_UNIDADE_DE_MEDIDA_A01_TIPO_DE_MEDIDA`, `T13_PRE_ACABADO_A01_PRE_ACABADO`, `T13_PRE_ACABADO_T14_FORMULA_A01_FORMULA`
+
+@Entity
+@Table(name="t18_estoque")
+public class EstoqueEntity {
+
+}

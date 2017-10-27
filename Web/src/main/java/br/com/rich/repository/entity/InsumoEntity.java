@@ -1,0 +1,58 @@
+package br.com.rich.repository.entity;
+
+import java.time.LocalDateTime;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+	//`A02_NF_FORNECEDOR`, `A03_DATA_CRIACAO`, `A04_DATA_MODIFICACAO`, 
+	//`T03_PESSOA_JURIDICA_A01_PESSOA_JURIDICA`, `T11_PRODUTO_A01_PRODUTO`, `T18_ESTOQUE_A01_ESTOQUE`, `T18_ESTOQUE_T24_UNIDADE_DE_MEDIDA_A01_TIPO_DE_MEDIDA`
+
+@Entity
+@Table(name="t16_insumo")
+public class InsumoEntity {
+
+	@Id
+	@GeneratedValue
+	@Column(name = "A01_INSUMO")
+	private int	id;
+	@Column(name = "A02_NF_FORNECEDOR")
+	private String	nfFornecedor;
+	@Column(name = "A03_DATA_CRIACAO")
+	private LocalDateTime	dataCriacao;
+	@Column(name = "A04_DATA_MODIFICACAO")
+	private LocalDateTime	dataModificacao;
+	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	public String getNfFornecedor() {
+		return nfFornecedor;
+	}
+	public void setNfFornecedor(String nfFornecedor) {
+		this.nfFornecedor = nfFornecedor;
+	}
+	public LocalDateTime getDataCriacao() {
+		return dataCriacao;
+	}
+	public void setDataCriacao(LocalDateTime dataCriacao) {
+		this.dataCriacao = dataCriacao;
+	}
+	public LocalDateTime getDataModificacao() {
+		return dataModificacao;
+	}
+	public void setDataModificacao(LocalDateTime dataModificacao) {
+		this.dataModificacao = dataModificacao;
+	}
+	
+	
+	
+}

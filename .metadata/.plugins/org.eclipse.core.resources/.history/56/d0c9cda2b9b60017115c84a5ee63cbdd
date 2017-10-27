@@ -1,0 +1,23 @@
+package br.com.rich.model;
+
+import java.time.LocalDateTime;
+
+import javax.persistence.Column;
+import javax.persistence.OneToOne;
+
+import br.com.rich.repository.entity.EstadoEntity;
+
+public class CidadeModel {
+
+	
+	private int id;
+	
+	private String nome;
+	
+	private LocalDateTime	dataCriacao;
+	
+	private LocalDateTime	dataModificacao;
+	
+	private EstadoEntity estado;
+	
+}

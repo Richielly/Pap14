@@ -1,0 +1,13 @@
+package br.com.rich.repository.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+	//`A02_DATA_DO_PEDIDO`, `A03_NUMERO`, `A04_PREVISAO_DE_ENTREGA`, `A05_TIPO_DE_FRETE`, 
+	//`A06_OBSERVACOES`, `A07_PRAZOS_DE_VENCIMENTO`, `A08_VALOR_DO_FRETE`, `A09_STATUS`
+
+@Entity
+@Table(name="t10_pedido_produto_acabado")
+public class PedidoProdutoAcabadoEntity {
+
+}

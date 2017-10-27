@@ -1,0 +1,15 @@
+package br.com.rich.estado.controller;
+
+import javax.enterprise.context.RequestScoped;
+import javax.inject.Named;
+
+import br.com.rich.model.EstadoModel;
+
+@Named(value="cadastrarEstadoController")
+@RequestScoped
+public class CadastrarEstadoController {
+
+	EstadoModel estadoModel;
+	
+	
+}

@@ -1,0 +1,39 @@
+package br.com.rich.estado.controller;
+
+import javax.enterprise.context.RequestScoped;
+import javax.inject.Inject;
+import javax.inject.Named;
+
+import br.com.rich.model.EstadoModel;
+import br.com.rich.repository.EstadoRepository;
+import br.com.rich.uteis.Uteis;
+
+@Named(value="cadastrarEstadoController")
+@RequestScoped
+public class CadastrarEstadoController {
+	@Inject
+	EstadoModel estadoModel;
+	@Inject
+	EstadoRepository estadoRepository;
+	
+	public void SalvarNovoEstado(){
+		 
+		estadoRepository.salvarNovaCidade(this.estadoModel);
+		this.estadoModel = null;
+ 
+		Uteis.MensagemInfo("Registro cadastrado com sucesso");
+ 
+	}
+	
+	
+	public EstadoModel getEstadoModel() {
+		return estadoModel;
+	}
+	public void setEstadoModel(EstadoModel estadoModel) {
+		this.estadoModel = estadoModel;
+	}
+	
+	
+	
+	
+}

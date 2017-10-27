@@ -1,0 +1,27 @@
+package br.com.rich.repository.entity;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+public class CidadeEntity implements Serializable{
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@GeneratedValue
+	@Column(name="A01_CIDADE")
+	private int id;
+	
+	@Column(name="A02_NOME")
+	private String nome;
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+}

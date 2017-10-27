@@ -1,0 +1,5 @@
+package br.com.rich.repository.entity;
+
+public class Estoque {
+
+}

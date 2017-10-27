@@ -1,0 +1,30 @@
+package br.com.rich.repository;
+
+import javax.inject.Inject;
+import javax.persistence.EntityManager;
+
+import br.com.rich.model.CidadeModel;
+import br.com.rich.repository.entity.CidadeEntity;
+import br.com.rich.uteis.Uteis;
+
+public class CidadeRepository {
+
+	@Inject
+	CidadeEntity cidadeEntity;
+	
+	EntityManager entityManager;
+	
+	
+	/***
+	 * MÉTODO RESPONSÁVEL POR SALVAR UMA NOVA CIDADE
+	 * @param cidadeModel
+	 */
+	
+	public void salvarNovaCidade (CidadeModel cidadeModel){
+		entityManager =  Uteis.JpaEntityManager();
+		
+		
+		
+	}
+	
+}

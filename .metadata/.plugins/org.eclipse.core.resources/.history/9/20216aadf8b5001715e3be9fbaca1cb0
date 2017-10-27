@@ -1,0 +1,15 @@
+package br.com.rich.repository.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+	//`A02_NOME`, `A03_LOTE`, `A04_DATA_DE_FABRICACAO`, `A05_DATA_DE_VENCIMENTO`, `A06_QUANTIDADE_POR_EMBALAGEM`, `A07_PRECO`, `A08_STATUS`, 
+	//`T24_UNIDADE_DE_MEDIDA_A01_TIPO_DE_MEDIDA`
+
+@Entity
+@Table(name="t11_produto")
+public class Produto {
+
+	
+	
+}

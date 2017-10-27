@@ -1,0 +1,25 @@
+package br.com.rich.repository.entity;
+
+import java.time.LocalDateTime;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+	//`A02_DATA_CRIACAO`, `A03_DATA_MODIFICACAO`, `A04_NOME`, 
+ 	//`T14_FORMULA_A01_FORMULA`, `T14_FORMULA_A01_FORMULA1`
+
+@Entity
+@Table(name="t13_pre_acabado")
+public class PreAcabadoEntity {
+	
+	@Column(name = "A01_PRE_ACABADO")
+	private int	id;
+	@Column(name = "A04_NOME")
+	private int	nome;
+	@Column(name = "A04_DATA_CRIACAO")
+	private LocalDateTime	dataCriacao;
+	@Column(name = "A05_DATA_MODIFICACAO")
+	private LocalDateTime	dataModificacao;
+
+}

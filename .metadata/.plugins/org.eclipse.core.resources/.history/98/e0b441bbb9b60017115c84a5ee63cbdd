@@ -1,0 +1,20 @@
+package br.com.rich.model;
+
+import java.time.LocalDateTime;
+
+import br.com.rich.repository.entity.EstadoEntity;
+
+public class CidadeModel {
+
+	
+	private int id;
+	
+	private String nome;
+	
+	private LocalDateTime	dataCriacao;
+	
+	private LocalDateTime	dataModificacao;
+	
+	private EstadoEntity estado;
+	
+}

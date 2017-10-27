@@ -1,0 +1,19 @@
+package br.com.rich.model;
+
+import java.time.LocalDateTime;
+
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+public class EstadoModel {
+
+	
+	private int id;
+	private String nome;
+	private String sigla;
+	private LocalDateTime	dataCriacao;
+	private LocalDateTime	dataModificacao;
+	
+	
+}

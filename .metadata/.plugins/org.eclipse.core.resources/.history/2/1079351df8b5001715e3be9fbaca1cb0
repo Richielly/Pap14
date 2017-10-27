@@ -1,0 +1,109 @@
+package br.com.rich.repository.entity;
+
+import java.time.LocalDateTime;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+	//`A02_DATA_DO_PEDIDO`, `A03_NUMERO`, `A04_PREVISAO_DE_ENTREGA`, 
+    //`A05_TIPO_DE_FRETE`, `A06_OBSERVACOES`, `A07_PRAZOS_DE_VENCIMENTO`, `A08_VALOR_DO_FRETE`, `A09_STATUS`
+
+@Entity
+@Table(name="t09_pedido")
+public class PedidoEntity {
+	
+	@Column(name = "A01_PEDIDO")
+	private int id;
+	@Column(name = "A02_DATA_DO_PEDIDO")
+	private LocalDateTime	dataDoPedido;
+	@Column(name = "A03_NUMERO")
+	private int numero;
+	@Column(name = "A04_PREVISAO_DE_ENTREGA")
+	private LocalDateTime previsaodeEntrega;
+	@Column(name = "A05_TIPO_DE_FRETE")
+	private String tipoDeFrete;
+	@Column(name = "A06_OBSERVACOES")
+	private String observacoes;
+	@Column(name = "A07_PRAZOS_DE_VENCIMENTO")
+	private LocalDateTime prazoDeVencimento;
+	@Column(name = "A08_VALOR_DO_FRETE")
+	private Double valorDoFrete;
+	@Column(name = "A09_STATUS")
+	private String Status;
+	@Column(name = "A10_DATA_CRIACAO")
+	private LocalDateTime	dataCriacao;
+	@Column(name = "A11_DATA_MODIFICACAO")
+	private LocalDateTime	dataModificacao;
+	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public LocalDateTime getDataDoPedido() {
+		return dataDoPedido;
+	}
+	public void setDataDoPedido(LocalDateTime dataDoPedido) {
+		this.dataDoPedido = dataDoPedido;
+	}
+	public int getNumero() {
+		return numero;
+	}
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+	public LocalDateTime getPrevisaodeEntrega() {
+		return previsaodeEntrega;
+	}
+	public void setPrevisaodeEntrega(LocalDateTime previsaodeEntrega) {
+		this.previsaodeEntrega = previsaodeEntrega;
+	}
+	public String getTipoDeFrete() {
+		return tipoDeFrete;
+	}
+	public void setTipoDeFrete(String tipoDeFrete) {
+		this.tipoDeFrete = tipoDeFrete;
+	}
+	public String getObservacoes() {
+		return observacoes;
+	}
+	public void setObservacoes(String observacoes) {
+		this.observacoes = observacoes;
+	}
+	public LocalDateTime getPrazoDeVencimento() {
+		return prazoDeVencimento;
+	}
+	public void setPrazoDeVencimento(LocalDateTime prazoDeVencimento) {
+		this.prazoDeVencimento = prazoDeVencimento;
+	}
+	public Double getValorDoFrete() {
+		return valorDoFrete;
+	}
+	public void setValorDoFrete(Double valorDoFrete) {
+		this.valorDoFrete = valorDoFrete;
+	}
+	public String getStatus() {
+		return Status;
+	}
+	public void setStatus(String status) {
+		Status = status;
+	}
+	public LocalDateTime getDataCriacao() {
+		return dataCriacao;
+	}
+	public void setDataCriacao(LocalDateTime dataCriacao) {
+		this.dataCriacao = dataCriacao;
+	}
+	public LocalDateTime getDataModificacao() {
+		return dataModificacao;
+	}
+	public void setDataModificacao(LocalDateTime dataModificacao) {
+		this.dataModificacao = dataModificacao;
+	}
+	
+	
+	
+}

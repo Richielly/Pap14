@@ -1,0 +1,46 @@
+package br.com.rich.repository.entity;
+
+import java.time.LocalDateTime;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="t15_formula_insumo")
+
+	//`T14_FORMULA_A01_FORMULA`,`T16_INSUMO_A01_INSUMO`, `T16_INSUMO_T11_PRODUTO_A01_PRODUTO`
+
+public class FormulaInsumo {
+	
+	
+	@Column(name = "A01_FORMULA_INSUMO")
+	private int	id;
+	@Column(name = "A02_DATA_CRIACAO")
+	private LocalDateTime	dataCriacao;
+	@Column(name = "A03_DATA_MODIFICACAO")
+	private LocalDateTime	dataModificacao;
+	
+	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public LocalDateTime getDataCriacao() {
+		return dataCriacao;
+	}
+	public void setDataCriacao(LocalDateTime dataCriacao) {
+		this.dataCriacao = dataCriacao;
+	}
+	public LocalDateTime getDataModificacao() {
+		return dataModificacao;
+	}
+	public void setDataModificacao(LocalDateTime dataModificacao) {
+		this.dataModificacao = dataModificacao;
+	}
+
+	
+}

@@ -1,0 +1,24 @@
+package br.com.rich.repository.entity;
+
+import java.time.LocalDateTime;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+	//`T21_ORDEM_A01_ORDEM`, `T13_PRE_ACABADO_A01_PRE_ACABADO`, `T13_PRE_ACABADO_T14_FORMULA_A01_FORMULA`
+
+@Entity
+@Table(name="t22_ordem_de_producao")
+public class OrdemdeProducaoEntity {
+
+	
+	
+	@Column(name = "A01_ORDEM_DE_PRODUCAO")
+	private int	id;
+	@Column(name = "A03_DATA_CRIACAO")
+	private LocalDateTime	dataCriacao;
+	@Column(name = "A04_DATA_MODIFICACAO")
+	private LocalDateTime	dataModificacao;
+	
+}

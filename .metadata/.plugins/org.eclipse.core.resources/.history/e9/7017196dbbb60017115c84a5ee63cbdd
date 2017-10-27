@@ -1,0 +1,12 @@
+package br.com.rich.repository;
+
+import javax.inject.Inject;
+
+import br.com.rich.repository.entity.CidadeEntity;
+
+public class CidadeRepository {
+
+	@Inject
+	CidadeEntity cidadeEntity;
+	
+}

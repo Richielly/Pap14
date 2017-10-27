@@ -1,0 +1,25 @@
+package br.com.rich.repository.entity;
+
+import java.time.LocalDateTime;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+//`A02_NOME`, `A03_SIGLA`, `A04_DATA_CRIACAO`, `A05_DATA_MODIFICACAO`
+@Entity
+@Table(name="t08_estado")
+public class EstadoEntity {
+
+	@Column(name = "A01_ESTADO")
+	private int id;
+	@Column(name = "A02_NOME")
+	private String nome;
+	@Column(name = "A03_SIGLA")
+	private String sigla;
+	@Column(name = "A04_DATA_CRIACAO")
+	private LocalDateTime	dataCriacao;
+	@Column(name = "A05_DATA_MODIFICACAO")
+	private LocalDateTime	dataModificacao;
+	
+}

@@ -1,0 +1,8 @@
+package br.com.rich.repository.entity;
+
+
+@entity
+@table(name="t09_pedido")
+public class PedidoEntity {
+
+}

@@ -1,0 +1,14 @@
+package br.com.rich.repository.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="t15_formula_insumo")
+
+	//`T14_FORMULA_A01_FORMULA`, 
+	//`T16_INSUMO_A01_INSUMO`, `T16_INSUMO_T11_PRODUTO_A01_PRODUTO`
+
+public class FormulaInsumo {
+
+}

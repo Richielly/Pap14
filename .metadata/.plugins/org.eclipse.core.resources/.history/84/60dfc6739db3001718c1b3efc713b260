@@ -1,0 +1,9 @@
+package br.com.rich.repository.entity;
+
+import java.io.Serializable;
+
+public class CidadeEntity implements Serializable{
+	private static final long serialVersionUID = 1L;
+	
+	
+}

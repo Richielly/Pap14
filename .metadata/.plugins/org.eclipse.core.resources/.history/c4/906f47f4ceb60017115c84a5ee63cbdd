@@ -1,0 +1,40 @@
+package br.com.rich.estado.controller;
+
+import java.io.Serializable;
+import java.util.List;
+
+import javax.enterprise.inject.Produces;
+import javax.faces.view.ViewScoped;
+import javax.inject.Inject;
+import javax.inject.Named;
+
+import br.com.rich.model.EstadoModel;
+import br.com.rich.repository.EstadoRepository;
+
+@Named(value="consultarCidadeController")
+@ViewScoped
+public class ConsultarEstadoController implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+	
+	@Inject transient
+	private EstadoModel estadoModel;
+ 
+	@Produces 
+	private List<EstadoModel> estado;
+ 
+	@Inject transient
+	private EstadoRepository estadoRepository;
+
+	public EstadoModel getEstadoModel() {
+		return estadoModel;
+	}
+
+	public void setEstadoModel(EstadoModel estadoModel) {
+		this.estadoModel = estadoModel;
+	}
+	
+	
+	
+	
+}

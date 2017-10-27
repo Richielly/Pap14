@@ -1,0 +1,21 @@
+package br.com.rich.repository.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+//A02_LOGRADOURO`, `A03_NUMERO`, `A04_BAIRRO`, `A05_CEP`, `A06_COMPLEMENTO`
+//`T07_CIDADE_A01_CIDADE`, `T01_PESSOA_A01_PESSOA`
+
+@Entity
+@Table(name="t06_endereco")
+public class EnderecoEntity {
+
+	private int id;
+	private String logradouro;
+	private String numero;
+	private String Bairro;
+	private long cep;
+	private String complemento;
+	private Cidade cidade;
+	
+}

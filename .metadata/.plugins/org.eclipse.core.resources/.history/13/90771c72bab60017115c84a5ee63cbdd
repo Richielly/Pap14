@@ -1,0 +1,15 @@
+package br.com.rich.model;
+
+import java.time.LocalDateTime;
+
+public class EstadoModel {
+
+	
+	private int id;
+	private String nome;
+	private String sigla;
+	private LocalDateTime	dataCriacao;
+	private LocalDateTime	dataModificacao;
+	
+	
+}

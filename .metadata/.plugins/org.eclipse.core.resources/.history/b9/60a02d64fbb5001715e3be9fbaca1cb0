@@ -1,0 +1,12 @@
+package br.com.rich.repository.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+	//`A02_DATA_CRIACAO`, `A03_DATA_MODIFICACAO`, `A04_NOME`, `T14_FORMULA_A01_FORMULA`, `T14_FORMULA_A01_FORMULA1`
+
+@Entity
+@Table(name="t13_pre_acabado")
+public class PreAcabadoEntity {
+
+}

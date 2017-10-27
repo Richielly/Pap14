@@ -1,0 +1,20 @@
+package br.com.rich.repository.entity;
+
+import java.time.LocalDateTime;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+	//`A02_QUANTIDADE`, `A03_DATA_CRIACAO`, `A04_DATA_MODIFICACAO`
+
+@Entity
+@Table(name="t14_formula")
+public class Formula {
+
+	@Column(name = "A09_DATA_CRIACAO")
+	private LocalDateTime	dataCriacao;
+	@Column(name = "A10_DATA_MODIFICACAO")
+	private LocalDateTime	dataModificacao;
+	
+}

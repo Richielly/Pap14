@@ -1,0 +1,49 @@
+package br.com.rich.uteis;
+
+import java.io.Serializable;
+
+import javax.faces.component.UIComponent;
+import javax.faces.context.FacesContext;
+import javax.faces.convert.Converter;
+import javax.faces.convert.FacesConverter;
+
+import br.com.rich.model.EstadoModel;
+
+@FacesConverter(value = "selectOneMenuConverter", forClass = EstadoModel.class)
+public class SelectOneMenuConverter implements Converter, Serializable {
+
+	//EstadoRepository estadoRepository = new EstadoRepository();
+	
+	  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Override
+	    public Object getAsObject(FacesContext fc, UIComponent uic, String codigo) {
+		  if(codigo != null && !codigo.isEmpty()) {
+	        	
+	                return (EstadoModel) HibernateU
+	           
+		  }
+	            return null;
+	        
+	    }
+
+	  public String getAsString(FacesContext fc, UIComponent uic, Object object) {
+	        if(object != null) {
+	            return String.valueOf(((EstadoModel) object).getId());
+	        }
+	        else {
+	            return null;
+	        }
+	    }   
+	
+}
+
+
+
+
+
+  
+

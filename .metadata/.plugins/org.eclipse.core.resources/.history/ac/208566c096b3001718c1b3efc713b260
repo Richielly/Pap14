@@ -1,0 +1,16 @@
+package br.com.rich.repository.entity;
+
+import java.io.Serializable;
+
+public class ContatoEntity implements Serializable {
+
+	
+	//A02_TELEFONE_FIXO`, `A03_CELULAR`, `A04_EMAIL`, `A05_WEBSITE`
+	private static final long serialVersionUID = 1L;
+	
+	private long id;
+	private String A02_TELEFONE_FIXO;
+	private String A03_CELULAR;
+	private String A04_EMAIL;
+	private String A05_WEBSITE;
+}

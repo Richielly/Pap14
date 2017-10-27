@@ -1,0 +1,32 @@
+package br.com.rich.repository.entity;
+
+import java.time.LocalDateTime;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+	//`A02_DATA_DO_PEDIDO`, `A03_NUMERO`, `A04_PREVISAO_DE_ENTREGA`, 
+    //`A05_TIPO_DE_FRETE`, `A06_OBSERVACOES`, `A07_PRAZOS_DE_VENCIMENTO`, `A08_VALOR_DO_FRETE`, `A09_STATUS`
+
+@Entity
+@Table(name="t09_pedido")
+public class PedidoEntity {
+	
+	@Column(name = "A01_PEDIDO")
+	private int id;
+	@Column(name = "A02_DATA_DO_PEDIDO")
+	private LocalDateTime	dataDoPedido;
+	@Column(name = "A03_NUMERO")
+	private int numero;
+	@Column(name = "A04_PREVISAO_DE_ENTREGA")
+	private int previsaodeEntrega;
+	
+	
+	@Column(name = "A06_DATA_CRIACAO")
+	private LocalDateTime	dataCriacao;
+	@Column(name = "A07_DATA_MODIFICACAO")
+	private LocalDateTime	dataModificacao;
+	
+	
+}

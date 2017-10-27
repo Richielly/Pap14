@@ -1,0 +1,9 @@
+package br.com.rich.repository.entity;
+
+import javax.persistence.Entity;
+
+@Entity
+@table(name="t14_formula")
+public class Formula {
+
+}

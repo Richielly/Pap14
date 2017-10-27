@@ -1,0 +1,30 @@
+package br.com.rich.repository.entity;
+
+import java.time.LocalDateTime;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+	//`A02_NOME`, `A03_SIGLA`
+
+@Entity
+@Table(name="t24_unidade_de_medida")
+public class UnidadeDeMedidaEntity {
+
+	@Id
+	@GeneratedValue
+	@Column(name="A01_UNIDADE_DE_MEDIDA")
+	private int id;
+	@Column(name="A02_NOME")
+	private String nome;
+	@Column(name="A02_NOME")
+	private String sugla;
+	@Column(name = "A03_DATA_CRIACAO")
+	private LocalDateTime	dataCriacao;
+	@Column(name = "A04_DATA_MODIFICACAO")
+	private LocalDateTime	dataModificacao;
+	
+}

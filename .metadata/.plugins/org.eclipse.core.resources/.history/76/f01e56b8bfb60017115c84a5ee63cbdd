@@ -1,0 +1,18 @@
+package br.com.rich.cidade.controller;
+
+import javax.enterprise.context.RequestScoped;
+import javax.inject.Inject;
+import javax.inject.Named;
+
+import br.com.rich.model.CidadeModel;
+import br.com.rich.repository.CidadeRepository;
+
+@Named(value="cadastrarCidadeController")
+@RequestScoped
+public class CadastrarCidadeController {
+	
+	@Inject
+	CidadeModel cidadeModel;
+	CidadeRepository cidadeRepository;
+	
+}
